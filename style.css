@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+body{
+    background-color: #FCFFE7;
+}
+
+.header{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:40px;
+    padding-right: 40px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px;
+}
+
+nav ul li a{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+span{
+    color: #EB455F;
+}
+
+nav ul li a:hover{
+    color: #EB455F;
+    transition: .5s;
+}
+
+button{
+    background-color:#EB455F;
+    padding: 6px 16px;
+    border: 0px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.85;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.car{
+    margin-top: 260px;
+    margin-left: 0px;
+    height: auto;
+    width: 15%;
+    display: none;
+    animation: drive 4s linear 1.5s infinite backwards;
+}
+
+.bigcar{
+    margin-top: 200px;
+    margin-left: 900px;
+    transform: scale(1.2);
+}
+
+@keyframes drive {
+    from{
+        margin-left: -400px;
+    }
+
+    to{
+        margin-left: 1600px;
+    }
+}
